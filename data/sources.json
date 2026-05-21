@@ -1,0 +1,315 @@
+[
+  {
+    "id": "telegraaf",
+    "name": "De Telegraaf",
+    "category": "Nationaal",
+    "type": "website",
+    "urls": [
+      "https://www.telegraaf.nl/binnenland/",
+      "https://www.telegraaf.nl/politiek/",
+      "https://www.telegraaf.nl/entertainment/"
+    ],
+    "rssUrls": [
+      "https://www.telegraaf.nl/rss",
+      "https://www.telegraaf.nl/nieuws/binnenland/rss",
+      "https://www.telegraaf.nl/nieuws/politiek/rss"
+    ]
+  },
+  {
+    "id": "ad",
+    "name": "Algemeen Dagblad",
+    "category": "Nationaal",
+    "type": "website",
+    "urls": [
+      "https://www.ad.nl/binnenland/",
+      "https://www.ad.nl/politiek/",
+      "https://www.ad.nl/bizar/"
+    ],
+    "rssUrls": [
+      "https://www.ad.nl/home/rss.xml",
+      "https://www.ad.nl/binnenland/rss.xml"
+    ]
+  },
+  {
+    "id": "rtl",
+    "name": "RTL Nieuws",
+    "category": "Nationaal",
+    "type": "website",
+    "urls": [
+      "https://www.rtl.nl/nieuws",
+      "https://www.rtl.nl/nieuws/politiek",
+      "https://www.rtl.nl/boulevard"
+    ],
+    "rssUrls": [
+      "https://www.rtl.nl/rss/nieuws/nieuws.xml"
+    ]
+  },
+  {
+    "id": "nos",
+    "name": "NOS",
+    "category": "Nationaal",
+    "type": "website",
+    "urls": [
+      "https://nos.nl/nieuws/binnenland",
+      "https://nos.nl/nieuws/politiek",
+      "https://nos.nl/nieuws/economie"
+    ],
+    "rssUrls": [
+      "https://feeds.nos.nl/nosnieuws",
+      "https://feeds.nos.nl/nosnieuwsbinnenland",
+      "https://feeds.nos.nl/nosnieuwspolitiek"
+    ]
+  },
+  {
+    "id": "volkskrant",
+    "name": "De Volkskrant",
+    "category": "Nationaal",
+    "type": "website",
+    "urls": [
+      "https://www.volkskrant.nl/binnenland/",
+      "https://www.volkskrant.nl/politiek/"
+    ],
+    "rssUrls": [
+      "https://www.volkskrant.nl/rss.xml"
+    ]
+  },
+  {
+    "id": "trouw",
+    "name": "Trouw",
+    "category": "Nationaal",
+    "type": "website",
+    "urls": [
+      "https://www.trouw.nl/binnenland/",
+      "https://www.trouw.nl/politiek/"
+    ],
+    "rssUrls": [
+      "https://www.trouw.nl/rss.xml"
+    ]
+  },
+  {
+    "id": "hartvannederland",
+    "name": "Hart van Nederland",
+    "category": "Nationaal",
+    "type": "website",
+    "urls": [
+      "https://www.hartvannederland.nl",
+      "https://www.hartvannederland.nl/politiek",
+      "https://www.hartvannederland.nl/112"
+    ],
+    "rssUrls": [
+      "https://www.hartvannederland.nl/feed"
+    ]
+  },
+  {
+    "id": "politie",
+    "name": "Politie.nl",
+    "category": "Officieel",
+    "type": "website",
+    "urls": [
+      "https://www.politie.nl/nieuws",
+      "https://www.politie.nl/gezocht"
+    ],
+    "rssUrls": [
+      "https://www.politie.nl/nieuws?_format=json"
+    ]
+  },
+  {
+    "id": "rechtspraak",
+    "name": "Rechtspraak.nl",
+    "category": "Officieel",
+    "type": "website",
+    "urls": [
+      "https://www.rechtspraak.nl/Nieuwsoverzicht"
+    ],
+    "rssUrls": [
+      "https://www.rechtspraak.nl/rss/nieuws"
+    ]
+  },
+  {
+    "id": "crimesite",
+    "name": "Crimesite",
+    "category": "Misdaad",
+    "type": "website",
+    "urls": [
+      "https://www.crimesite.nl/category/laatste-nieuws/"
+    ],
+    "rssUrls": [
+      "https://www.crimesite.nl/feed"
+    ]
+  },
+  {
+    "id": "nhnieuws",
+    "name": "NH Nieuws",
+    "category": "Noord-Holland",
+    "type": "website",
+    "urls": [
+      "https://www.nhnieuws.nl",
+      "https://www.nhnieuws.nl/schiphol",
+      "https://www.nhnieuws.nl/west-friesland",
+      "https://www.nhnieuws.nl/zaanstreek-waterland"
+    ],
+    "rssUrls": [
+      "https://www.nhnieuws.nl/rss"
+    ]
+  },
+  {
+    "id": "at5",
+    "name": "AT5",
+    "category": "Noord-Holland",
+    "type": "website",
+    "urls": [
+      "https://www.at5.nl/misdaad",
+      "https://www.at5.nl/politiek"
+    ],
+    "rssUrls": [
+      "https://www.at5.nl/rss/at5"
+    ]
+  },
+  {
+    "id": "rijnmond",
+    "name": "Rijnmond",
+    "category": "Zuid-Holland",
+    "type": "website",
+    "urls": [
+      "https://www.rijnmond.nl/nieuws",
+      "https://www.rijnmond.nl/nieuws/bureau-rijnmond",
+      "https://www.rijnmond.nl/nieuws/112"
+    ],
+    "rssUrls": [
+      "https://www.rijnmond.nl/rss/nieuws"
+    ]
+  },
+  {
+    "id": "regio15",
+    "name": "Regio 15 (Den Haag)",
+    "category": "Zuid-Holland",
+    "type": "website",
+    "urls": [
+      "https://regio15.nl/nieuws/overzicht/"
+    ],
+    "rssUrls": [
+      "https://regio15.nl/feed"
+    ]
+  },
+  {
+    "id": "omroepwest",
+    "name": "Omroep West",
+    "category": "Zuid-Holland",
+    "type": "website",
+    "urls": [
+      "https://www.omroepwest.nl/regio/den-haag",
+      "https://www.omroepwest.nl/regio/bodegraven-reeuwijk",
+      "https://www.omroepwest.nl/regio/bollenstreek"
+    ],
+    "rssUrls": [
+      "https://www.omroepwest.nl/rss"
+    ]
+  },
+  {
+    "id": "rtvutrecht",
+    "name": "RTV Utrecht",
+    "category": "Utrecht",
+    "type": "website",
+    "urls": [
+      "https://www.rtvutrecht.nl/net-binnen",
+      "https://www.rtvutrecht.nl/bureau-hengeveld"
+    ],
+    "rssUrls": [
+      "https://www.rtvutrecht.nl/rss"
+    ]
+  },
+  {
+    "id": "omroepbrabant",
+    "name": "Omroep Brabant",
+    "category": "Noord-Brabant",
+    "type": "website",
+    "urls": [
+      "https://www.omroepbrabant.nl/mostviewed",
+      "https://www.omroepbrabant.nl/netbinnen",
+      "https://www.omroepbrabant.nl/112"
+    ],
+    "rssUrls": [
+      "https://www.omroepbrabant.nl/rss"
+    ]
+  },
+  {
+    "id": "bndestem",
+    "name": "BN De Stem",
+    "category": "Noord-Brabant",
+    "type": "website",
+    "urls": [
+      "https://www.bndestem.nl/nieuws/",
+      "https://www.bndestem.nl/112-nieuws-breda/",
+      "https://www.bndestem.nl/112-nieuws-tilburg/"
+    ],
+    "rssUrls": [
+      "https://www.bndestem.nl/rss.xml"
+    ]
+  },
+  {
+    "id": "destentor",
+    "name": "De Stentor",
+    "category": "Gelderland",
+    "type": "website",
+    "urls": [
+      "https://www.destentor.nl/nieuws/",
+      "https://www.destentor.nl/112-nieuws-nijmegen/",
+      "https://www.destentor.nl/112-nieuws-amersfoort/"
+    ],
+    "rssUrls": [
+      "https://www.destentor.nl/rss.xml"
+    ]
+  },
+  {
+    "id": "pzc",
+    "name": "PZC (Zeeland)",
+    "category": "Zeeland",
+    "type": "website",
+    "urls": [
+      "https://www.pzc.nl/nieuws/",
+      "https://www.pzc.nl/112-nieuws-bergen-op-zoom/",
+      "https://www.pzc.nl/112-nieuws-middelburg/"
+    ],
+    "rssUrls": [
+      "https://www.pzc.nl/rss.xml"
+    ]
+  },
+  {
+    "id": "rtvnoord",
+    "name": "RTV Noord",
+    "category": "Groningen",
+    "type": "website",
+    "urls": [
+      "https://www.rtvnoord.nl/net-binnen",
+      "https://www.rtvnoord.nl/112"
+    ],
+    "rssUrls": [
+      "https://www.rtvnoord.nl/rss/nieuws"
+    ]
+  },
+  {
+    "id": "l1limburg",
+    "name": "L1 Limburg",
+    "category": "Limburg",
+    "type": "website",
+    "urls": [
+      "https://www.l1nieuws.nl/net-binnen",
+      "https://www.l1nieuws.nl/112"
+    ],
+    "rssUrls": [
+      "https://www.l1nieuws.nl/rss"
+    ]
+  },
+  {
+    "id": "gooieneemlander",
+    "name": "Gooi- en Eemlander",
+    "category": "Noord-Holland",
+    "type": "website",
+    "urls": [
+      "https://www.gooieneemlander.nl/uitgelicht/"
+    ],
+    "rssUrls": [
+      "https://www.gooieneemlander.nl/rss.xml"
+    ]
+  }
+]
