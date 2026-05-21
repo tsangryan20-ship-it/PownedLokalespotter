@@ -1,5 +1,5 @@
 'use client';
-import { FilterState, Province, Category, ArticleStatus, SortOption } from '@/types';
+import { FilterState, Province, Category, ArticleStatus } from '@/types';
 
 const PROVINCES: Province[] = [
   'Nationaal', 'Noord-Holland', 'Zuid-Holland', 'Utrecht', 'Noord-Brabant',
@@ -69,23 +69,6 @@ export function FilterSidebar({ filters, onChange, stats }: Props) {
         <div className="flex justify-between text-[9px] text-[#333] mt-0.5">
           <span>Alles</span><span>90+</span>
         </div>
-      </div>
-
-      {/* Sort */}
-      <div className="bg-[#1a1a1a] rounded-xl border border-white/6 p-3">
-        <p className="text-[9px] font-bold text-[#444] uppercase tracking-[0.15em] mb-2">Sorteren</p>
-        <select
-          value={filters.sortBy}
-          onChange={e => onChange({ ...filters, sortBy: e.target.value as SortOption })}
-          className="w-full bg-[#111] text-[11px] text-[#ccc] border border-white/8 rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-[#e2148b]/40 cursor-pointer"
-        >
-          <option value="score">🔥 PowNed score</option>
-          <option value="date">🕐 Nieuwste eerst</option>
-          <option value="views_desc">👁 Meest bekeken</option>
-          <option value="views_asc">👁 Minst bekeken</option>
-          <option value="likes_desc">❤ Meest geliket</option>
-          <option value="likes_asc">❤ Minst geliket</option>
-        </select>
       </div>
 
       {/* Status */}

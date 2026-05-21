@@ -1,5 +1,38 @@
 [
   {
+    "id": "nunl",
+    "name": "NU.nl",
+    "category": "Nationaal",
+    "type": "website",
+    "urls": ["https://www.nu.nl"],
+    "rssUrls": [
+      "https://www.nu.nl/rss/Algemeen",
+      "https://www.nu.nl/rss/Binnenland",
+      "https://www.nu.nl/rss/Opmerkelijk",
+      "https://www.nu.nl/rss/Achterklap"
+    ]
+  },
+  {
+    "id": "alarm112",
+    "name": "112-alarmeringen.nl",
+    "category": "112 / Veiligheid",
+    "type": "website",
+    "urls": ["https://112-alarmeringen.nl"],
+    "rssUrls": [
+      "https://112-alarmeringen.nl/feed"
+    ]
+  },
+  {
+    "id": "alarm112nl",
+    "name": "112Nederland",
+    "category": "112 / Veiligheid",
+    "type": "website",
+    "urls": ["https://112nederland.nl"],
+    "rssUrls": [
+      "https://112nederland.nl/feed/"
+    ]
+  },
+  {
     "id": "telegraaf",
     "name": "De Telegraaf",
     "category": "Nationaal",

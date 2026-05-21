@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from 'react';
 import dynamic from 'next/dynamic';
 import { Header } from '@/components/Header';
 import { Dashboard } from '@/components/Dashboard';
+import { TopNewsToday } from '@/components/TopNewsToday';
 import { AudioMonitor } from '@/components/AudioMonitor';
 import { Article } from '@/types';
 
@@ -18,7 +19,7 @@ const NewsMap = dynamic(() => import('@/components/NewsMap').then(m => m.NewsMap
   ),
 });
 
-type Tab = 'dashboard' | 'map' | 'audio';
+type Tab = 'dashboard' | 'topnews' | 'map' | 'audio';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<Tab>('dashboard');
@@ -45,7 +46,8 @@ export default function Home() {
 
   const loadMapArticles = useCallback(async () => {
     try {
-      const res = await fetch('/api/articles?limit=300&sortBy=score');
+      // Fetch ALL articles (not just analyzed) — NewsMap resolves coords via source fallback
+      const res = await fetch('/api/articles?limit=500&sortBy=score');
       const data = await res.json();
       setMapArticles(data.articles || []);
     } catch { /* silent */ }
@@ -114,15 +116,22 @@ export default function Home() {
         </div>
       )}
 
-      {/* Tab content */}
+      {/* Tab content — all tabs mounted but hidden to preserve state */}
       <div className="flex-1 flex flex-col">
-        {activeTab === 'dashboard' && (
+        <div className={activeTab === 'dashboard' ? 'flex-1 flex flex-col' : 'hidden'}>
           <Dashboard
             notify={notify}
             onScrape={handleScrape} onAnalyze={handleAnalyze}
             scraping={scraping} analyzing={analyzing}
           />
-        )}
+        </div>
+        <div className={activeTab === 'topnews' ? 'flex-1 flex flex-col' : 'hidden'}>
+          <TopNewsToday
+            notify={notify}
+            onScrape={handleScrape} onAnalyze={handleAnalyze}
+            scraping={scraping} analyzing={analyzing}
+          />
+        </div>
         {activeTab === 'map' && <NewsMap articles={mapArticles} />}
         {activeTab === 'audio' && <AudioMonitor />}
       </div>

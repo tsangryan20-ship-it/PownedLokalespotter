@@ -30,7 +30,7 @@ export async function scrapeRssFeed(sourceId: string, sourceName: string, feedUr
     const feed = await parser.parseURL(feedUrl);
     const items: ScrapedItem[] = [];
 
-    for (const item of feed.items.slice(0, 25)) {
+    for (const item of feed.items.slice(0, 50)) {
       if (!item.title || !item.link || !isValidArticleUrl(item.link)) continue;
 
       const rawItem = item as unknown as RSSParser.Item & Record<string, unknown>;
@@ -101,9 +101,9 @@ export async function scrapeWebPage(sourceId: string, sourceName: string, pageUr
           image_url: image,
         });
 
-        if (items.length >= 20) return false;
+        if (items.length >= 40) return false;
       });
-      if (items.length >= 15) break;
+      if (items.length >= 30) break;
     }
 
     return items;

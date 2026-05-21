@@ -200,6 +200,7 @@ export interface ArticleQuery {
   limit?: number;
   offset?: number;
   withCoords?: boolean;
+  todayOnly?: boolean;
 }
 
 const SORT_CLAUSES: Record<string, string> = {
@@ -230,6 +231,10 @@ export function getArticles(query: ArticleQuery = {}): Article[] {
   }
   if (query.withCoords) {
     sql += ' AND lat IS NOT NULL AND lng IS NOT NULL';
+  }
+  if (query.todayOnly) {
+    const today = new Date().toISOString().split('T')[0];
+    sql += ` AND (scraped_at >= '${today}' OR published_at >= '${today}')`;
   }
 
   sql += ' ' + (SORT_CLAUSES[query.sortBy ?? 'score'] ?? SORT_CLAUSES.score);

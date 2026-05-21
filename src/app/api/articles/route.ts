@@ -19,7 +19,8 @@ export async function GET(request: NextRequest) {
       return NextResponse.json(getStats());
     }
 
-    const articles = getArticles({ provinces, categories, minScore, status, search, sortBy, limit, offset });
+    const todayOnly = searchParams.get('todayOnly') === 'true';
+    const articles = getArticles({ provinces, categories, minScore, status, search, sortBy, limit, offset, todayOnly });
     return NextResponse.json({ articles, total: articles.length });
   } catch (err) {
     console.error('GET /api/articles error:', err);
